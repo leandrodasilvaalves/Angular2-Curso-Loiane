@@ -6,15 +6,15 @@ Requisitos necessários:
 Baixar a última versão:
 * https://nodejs.org/en/
 
-## TypeScrip
-Executar comando:
+## TypeScript
+Para instalar o TypeScript execute comando abaixo:
 ```
     npm install -g typescript
 ```
 
 
 ## Angular-CLI
-Executar comando:
+Para instalar o angular-cli execute comando abaixo:
 ```
     npm install -g @angular/cli
 ```
