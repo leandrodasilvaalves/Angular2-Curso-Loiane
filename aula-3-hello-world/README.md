@@ -12,7 +12,7 @@ Após instalar todos os pacotes, mude o diretório do promp para dentro da pasta
 
 Rode o comando abaixo para subir a apliação no browser.
 ```
-    ng-serve
+    ng-serve --open
 ```
 Para criar um componente utilizando um o angular-cli execute um dos comandos abaixo:
 ```
