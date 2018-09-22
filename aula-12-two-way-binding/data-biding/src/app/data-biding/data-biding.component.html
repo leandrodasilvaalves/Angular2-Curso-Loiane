@@ -1,0 +1,49 @@
+<section>
+  <article>
+    <h3>Two-way data binding</h3>
+    <div>
+      <input type="text" [value]="nome" (input)="nome = $event.target.value" />
+
+      <br>
+      <input type="text" [ngModel]="nome" (ngModelChange)="nome = $event" />
+      <br>
+      <strong>Forma simplificada</strong>
+      <br>
+      <input type="text" [(ngModel)]="nome" />
+      <p>
+        Angular por trás dos panos:
+        <input type="text" bindon-ngModel="nome" />
+      </p>
+
+      <p>Voce digitou o nome: {{ nome }}</p>
+
+      <div>
+        <h4>Exemplo de como lembrar a forma correta da sintaxe do two way data binding: </h4>
+        <img width="400" src="https://image.slidesharecdn.com/angular2-160501142059/95/angular-2-222-638.jpg?cb=1472322014" alt="">
+      </div>
+    </div>
+  </article>
+</section>
+<section>
+  <article>
+    <h3>Exemplo com objeto</h3>
+    <div>
+      <input type="text" [(ngModel)]="pessoa.nome">
+      <br>
+      <input type="text" [(ngModel)]="pessoa.idade">
+      <br>
+      <input type="text" [(ngModel)]="pessoa.endereco.rua">
+      <br>
+      <input type="text" [(ngModel)]="pessoa.endereco.complemento">
+
+      <p>Meu nome é {{ pessoa.nome}}, tenho {{ pessoa.idade }} e moro no endereço: {{ pessoa.endereco.rua}}, {{ pessoa.endereco.complemento}}</p>
+
+    </div>
+  </article>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
