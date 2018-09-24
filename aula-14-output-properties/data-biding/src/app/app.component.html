@@ -1,0 +1,8 @@
+<contador [valor]="valorInicial"></contador>
+<br>
+
+<p>Caso passe um valor fixo, não precisa usar o colchetes do <strong>property binding</strong>.
+    <br>
+    <contador valor=100 (mudouValor)="onMudouValor($event)"></contador>
+</p>
+<h2>Elemento Pai: {{ valorElementoPai }}</h2>
